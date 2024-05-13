@@ -1,0 +1,10 @@
+@use 'sass:map';
+@import './bootstrap.scss';
+
+.fancy-card-body {
+  margin: map.get($spacers, 5);
+
+  @include media-breakpoint-up(lg) {
+    margin-inline: map.get($spacers, 3);
+  }
+}
